@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/license" />
+
+
+
+    <custom_font.MyTextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/rleftbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_above="@+id/signUp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/card1"
+        android:scaleType="centerCrop"
+      />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group1"
+
+            />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp">
+
+                <custom_font.MyEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#aeb0a5"
+                    android:hint="Enter Your Email"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:background="#00000000"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginTop="5dp"
+                    ></LinearLayout>
+                
+                <custom_font.MyEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#aeb0a5"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Your Password"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:background="#00000000"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginTop="5dp"
+                    ></LinearLayout>
+
+                <custom_font.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Forgot Password ?"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="26dp"
+                    android:textColor="#000000"
+                    android:textSize="11dp"
+                    />
+
+
+                
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_above="@+id/signUp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sig"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+
+
+
+        />
+
+</RelativeLayout>
